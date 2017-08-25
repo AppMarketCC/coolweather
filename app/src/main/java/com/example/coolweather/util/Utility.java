@@ -83,7 +83,7 @@ public class Utility {
     //将返回的JSON数据解析成Wheather实体类
     public static Weather handleWeatherResponse(String response){
         try{
-            JSONEObject jsoneObject=new JSONObject(response);
+            JSONObject jsoneObject=new JSONObject(response);
             JSONArray jsonArry=jsoneObject.getJSONArray("HeWeather");
             String weatherContent=jsonArry.getJSONObject(0).toString();
             return new Gson().fromJson(weatherContent,Weather.class);

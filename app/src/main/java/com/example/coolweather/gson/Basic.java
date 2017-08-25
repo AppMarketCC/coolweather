@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class Basic {
-    @SerializedName("city");
+    @SerializedName("city")
     public String cityName;
 
     @SerializedName("id")
@@ -16,7 +16,7 @@ public class Basic {
     public Update update;
 
     public  class Update{
-        @SerializedName("loc");
+        @SerializedName("loc")
         public String updateTime;
     }
 }
