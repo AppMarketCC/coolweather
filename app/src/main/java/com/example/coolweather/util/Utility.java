@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 public class Utility {
     /*解析和处理服务器返回省级数据*/
-    public static boolean handleProvinceReponse(String response){
+    public static boolean handleProvinceResponse(String response){
         if (!TextUtils.isEmpty(response)){
             try {
                 JSONArray allProvinces=new JSONArray(response);
@@ -38,7 +38,7 @@ public class Utility {
     }
 
     /*解析和处理服务器返回的市级数据*/
-    public static boolean handleCityReponse(String response, int provinceId){
+    public static boolean handleCityResponse(String response, int provinceId){
         if (!TextUtils.isEmpty(response)){
             try {
                 JSONArray allCities=new JSONArray(response);
@@ -60,7 +60,7 @@ public class Utility {
 
     /*解析和处理 服务器返回县级数据*/
 
-    public static boolean handleCountyReponse(String response, int cityId){
+    public static boolean handleCountyResponse(String response, int cityId){
         if (!TextUtils.isEmpty(response)){
             try{
                 JSONArray allCounties=new JSONArray();
